@@ -1,0 +1,8 @@
+#!/bin/bash
+
+_time=`date "+%Y-%m-%d %H:%M:%S"`
+git status
+git add .
+git commit -m "[auto merge ${_time}]${1}"
+git pull
+git push
